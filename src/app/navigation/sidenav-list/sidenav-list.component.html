@@ -1,0 +1,20 @@
+<mat-nav-list>
+    <a mat-list-item routerLink="/signup" (click)="onClose()">
+        <mat-icon>face</mat-icon>
+        <span class="nav-caption">Signup</span>
+    </a>
+    <a mat-list-item routerLink="/login" (click)="onClose()">
+        <mat-icon>fingerprint</mat-icon>
+        <span class="nav-caption">Login</span>
+    </a>
+    <a mat-list-item routerLink="/picks" (click)="onClose()">
+        <mat-icon>label_important</mat-icon>
+        <span class="nav-caption">Picks</span>
+    </a>
+    <mat-list-item>
+            <button mat-icon-button>
+                    <mat-icon>lock</mat-icon>
+                    <span class="nav-caption" (click)="onClose()">Logout</span>
+                </button>
+    </mat-list-item>
+</mat-nav-list>

@@ -1,0 +1,45 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+.bears {
+    background-image: url('/assets/img/bears.jpg');
+  }
+
+
+// .mat-card-avatar {
+//     color:brown; 
+// }
+
+// .sanfrancisco {
+//     background-image: url(./assets/img/sanfrancisco.jpg);
+//   }
+  
+// .bears {
+//     background-image: url(./assets/img/bears.jpg);
+//   }
+  
+// .bengals {
+//     background-image: url(./assets/img/bengals.jpg);
+//   }
+  
+// .bills {
+//     background-image: url(./assets/img/bills.jpg);
+//   }
+    
+// .broncos {
+//     background-image: url(./assets/img/broncos.jpg);
+//   }
+    
+// .browns {
+//     background-image: url(./assets/img/browns.jpg);
+//   }
+  
+  

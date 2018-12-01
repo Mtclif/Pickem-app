@@ -1,0 +1,19 @@
+@import '../../../styles.scss';
+
+.current-picks {
+    padding: 30px;
+}
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+
+  .bears {
+    background-image: url('/assets/img/bears.jpg');
+  }
+
+  .bengals {
+    background-image: url('/assets/img/bengals.jpg');
+    background-size: cover;
+  }
+
