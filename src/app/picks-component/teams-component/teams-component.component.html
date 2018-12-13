@@ -1,6 +1,20 @@
 <section *ngFor="let team of teams" fxLayoutGap="10px" fxLayout fxLayoutAlign="center center">
-  <div mat-card-avatar [ngStyle]="styleTeams(team.logo)"></div>
-  <p>VS</p>
-  <div mat-card-avatar [ngStyle]="styleTeams(team.logo)"></div>
-</section>
 
+  <div *ngIf="team.home">
+      <div mat-card-avatar [ngStyle]="styleTeams(team.logo)"></div>
+      <!-- <img mat-card-image src="styleTeams(team.logo)" alt="{{team.abbreviation}}"> -->
+
+      <!-- <img mat-card-avatar [ngStyle]="styleTeams(team.logo)"> -->`
+  <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+      <mat-button-toggle value="bold">{{team.abbreviation}}</mat-button-toggle>
+  </mat-button-toggle-group>
+  </div>
+
+<div *ngIf="!team.home">
+    <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+        <mat-button-toggle value="bold">{{team.abbreviation}}</mat-button-toggle>
+    </mat-button-toggle-group>
+    <div mat-card-avatar [ngStyle]="styleTeams(team.logo)"></div>
+</div>
+
+</section>
